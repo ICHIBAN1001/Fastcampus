@@ -390,3 +390,10 @@ overflow: hidden;
   
 }
 /* !!!!!!! */
+.notice .promotion {
+  height: 693px;
+  background-color: blue;
+}
+.notice .promotion .swiper-container {
+
+}
