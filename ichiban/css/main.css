@@ -328,10 +328,23 @@ body {
   margin-right: 10px;
 }
 .notice .notice-line .inner .inner__left .swiper-container {
-background-color: orange;
 height: 62px;
 flex-grow: 1;
+overflow: hidden;
 }
+.notice .notice-line .inner .inner__left .swiper-container .swiper-wrapper {
+  
+ 
+}
+.notice .notice-line .inner .inner__left .swiper-container .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+.notice .notice-line .inner .inner__left .swiper-container .swiper-wrapper .swiper-slide a {
+  color: #fff;font-size: 18px;
+}
+
+
 .notice .notice-line .inner .inner__left .notice-line__more {
   width: 64px;
   height: 64px;

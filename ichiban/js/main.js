@@ -33,18 +33,6 @@ window.addEventListener('scroll',_.throttle(function(){
 },300));
 
 
-// 순차적으로 나오게하기 
-// const fadeEls = document.querySelectorAll('.visual .fade-in');
-
-// fadeEls.forEach(function(fadeEl, index){
-
-//   gsap.to(fadeEl, 1, {
-//      delay: (index+1) * .7,  // 0.7 , 1.4 , 2.1 ,  2.7  초
-//      opacity: 1
-//   });
-// });
-
-
 
 //시간차 요소 나타나게 하기 
 const fadeEls = document.querySelectorAll('.visual .fade-in');
@@ -56,3 +44,12 @@ fadeEls.forEach(function(fadeel,index){
     opacity:1
   });
 });
+
+
+new Swiper ('.notice-line .swiper-container', {
+  direction:'vertical',
+  autoplay: true,
+  loop: true,
+  mousewheel: true
+});
+
