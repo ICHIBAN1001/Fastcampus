@@ -392,8 +392,32 @@ overflow: hidden;
 /* !!!!!!! */
 .notice .promotion {
   height: 693px;
-  background-color: blue;
+  background-color: #F6F5F0;
+  position: relative;
 }
 .notice .promotion .swiper-container {
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819PX * 3 + 20PX) / -2);
+  overflow: hidden;
+  
+}
 
+.notice .promotion .swiper-slide {
+  transition: opacity 1s;
+  opacity: 0.2;
+  position: relative;
+}
+.notice .promotion .swiper-slide-active {
+  opacity: 1;
+}
+.notice .promotion .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
