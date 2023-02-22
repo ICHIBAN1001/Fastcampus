@@ -282,61 +282,98 @@ body {
 /* NOTICE */
 .notice {
   
+  
 }
 .notice .notice-line {
   position: relative;
+
 }
 .notice .notice-line .bg-left {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 50%;
   height: 100%;
+  top: 0;
+  left: 0;
   background-color: #333;
+  
 }
 .notice .notice-line .bg-right {
   position: absolute;
-  top: 0;
-  right: 0;
   width: 50%;
   height: 100%;
-  background-color: #f6f5ef;
+  top: 0;
+  right: 0;
+  background-color: #F6F5F0;
 }
 .notice .notice-line .inner {
   height: 62px;
   display: flex;
 }
-.notice .notice-line .inner__left {
-  width: 60%;
-  height: 100%;
-  background-color: #333;
-  display: flex;
-  align-items: center;
-}
-.notice .notice-line .inner__left h2{
-  color: #FFF;
-  font-size: 17px;
-  font-weight: 700;
-  margin-right: 20px;
-}
-.notice .notice-line .inner__left .swiper-container {
-  background-color: pink;
-  flex-grow: 1;
-}
-.notice .notice-line .inner__left .notice-line__more {
-  width: 62px;
-  height: 62px;
+
+.notice .notice-line .inner .inner__left {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 60%;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  top: 0;
+  left: 0;
 }
-.notice .notice-line .inner__left .notice-line__more .material-symbols-outlined {
-  color: #fff ;
+.notice .notice-line .inner .inner__left h2 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.notice .notice-line .inner .inner__left .swiper-container {
+background-color: orange;
+height: 62px;
+flex-grow: 1;
+}
+.notice .notice-line .inner .inner__left .notice-line__more {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.notice .notice-line .inner .inner__left .notice-line__more .material-icons {
   font-size: 30px;
+  position: absolute;
 }
 
 
-.notice .notice-line .inner__right {
+.notice .notice-line .inner .inner__right {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 40%;
   height: 100%;
+  background-color: #F6F5F0;
+  top: 0;
+  right: 0;
+  
 }
+.notice .notice-line .inner .inner__right h2 {
+  font-size: 19px;
+  font-weight: 700;
+  
+}
+.notice .notice-line .inner .inner__right .toggle-promotion {
+  
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.notice .notice-line .inner .inner__right .toggle-promotion .material-icons {
+  font-size: 30px;
+  
+}
+/* !!!!!!! */
