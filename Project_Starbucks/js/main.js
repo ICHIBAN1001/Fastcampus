@@ -90,3 +90,21 @@ new Swiper('.promotion .swiper-container' ,{
     nextEl:'.promotion .swiper-next'    // 다음 슬라이드 
   }
 });
+
+
+/* 6. Promotion 슬라이드 토글 기능  */
+const promotionEl = document.querySelector('.promotion');  // 슬라이드 영역 요소 검색!
+const promotionToggleBtn = document.querySelector('.toggle-promotion'); // 슬라이드 영역를 토글하는 버튼 검색!
+let isHidePromotion = false;   // 기본 값은 false  , boolean 값으로 설정
+
+promotionToggleBtn.addEventListener('click', function() { // 토글 버튼을 클릭하면,
+  isHidePromotion = !isHidePromotion // 슬라이드 영역 숨김 여부를 반댓값으로 할당
+
+  // 숨김 처리
+  if(isHidePromotion) {
+    promotionEl.classList.add('hide'); 
+  // 보임 처리
+  } else {
+    promotionEl.classList.remove('hide'); 
+  }
+});
