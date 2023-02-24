@@ -1,5 +1,3 @@
-# **HTML**
-
 ---
 
 # 요소 (=태그라고 혼용해서 사용한다 )
@@ -140,3 +138,5 @@
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8211d179-8ada-439a-b12d-dce30db992cf/Untitled.png)
 
 자식으로 블록 요소를 가져올 수 있다
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea953361-cb33-4799-a962-e4a25095daba/Untitled.png)
