@@ -559,11 +559,10 @@ header .badges .badge {
   height: 700px; 
   background-color: #333;
   overflow: hidden;
-  
 }
 .youtube .youtube__area {
   width: 1920px;
-  background-color: orange; /*시각적 확인*/
+  /*background-color: orange; /*시각적 확인*/
   position: absolute;   
   left: 50%;
   margin-left: calc(1920px / -2);
@@ -594,4 +593,23 @@ header .badges .badge {
   position: absolute;
   top: 0;
   left: 0;
+}
+.youtube .inner {
+  height: 700px;
+  /* background-color: royalblue; */
+}
+.youtube .floating1 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+.youtube .floating2 {
+  position: absolute;
+  top: 350px;
+  left: 150;
+}
+.youtube .floating3 {
+  position: absolute;
+  bottom: -200px;
+  right: 0;
 }
