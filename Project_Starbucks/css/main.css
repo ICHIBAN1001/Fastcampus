@@ -688,3 +688,16 @@ height: 400px;
 .pick-your-favorite .text-group .description {
   margin-bottom: 40px
 }
+
+
+/* 9. RESERVE STORE */
+.reserve-store {
+  background-image: url("../images/reserve_store_bg.jpg");
+  background-repeat: no-repeat; /* 배경이미지 반복되지 않고 하나만 나오게 */
+  background-position: center;  /* 배경의 이미지는 정 가운데 위치 시키기*/
+  background-attachment: fixed; 
+  background-size: cover;      /* 이미지가 고정된  Parallax 구조!!!! */
+}
+.reserve-store .inner {
+  height: 600px;  /* 높이 값이 없으면 안나온다!!! */
+}
