@@ -92,6 +92,18 @@ new Swiper('.promotion .swiper-container' ,{
   }
 });
 
+new Swiper('.awards .swiper-container', {
+  // direction: 'horizontal', // 수평 슬라이드
+  autoplay:true, // 자동 재생 여부
+  loop: true, // 반복 재생 여부
+  spaceBetween: 30, // 슬라이드 사이 여백
+  slidesPerView: 5, // 한 번에 보여줄 슬라이드 개수
+  navigation: {
+    prevEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next'
+  }
+});
+
 
 /* 6. Promotion 슬라이드 토글 기능  */
 const promotionEl = document.querySelector('.promotion');  // 슬라이드 영역 요소 검색!
@@ -109,6 +121,8 @@ promotionToggleBtn.addEventListener('click', function() { // 토글 버튼을 �
     promotionEl.classList.remove('hide'); 
   }
 });
+
+
 
 /* 7. 랜덤 함수를 사용 */
 // 범위 랜덤 함수(소수점 2자리까지)
@@ -131,3 +145,17 @@ function floatingObject (selector , delay , y_size) {
 floatingObject ('.floating1' , 1 , 15);
 floatingObject ('.floating2' , .5 , 15);
 floatingObject ('.floating3', 1.5 , 20);
+
+
+
+// 8. scrollMagic cdn
+const spyEls = document.querySelectorAll('section.scroll-spy');
+spyEls.forEach(function(spyEl){
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl,  // 보여짐 여부를 감시할 요소를 지정 
+      triggerHook: .8
+    })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller());
+});
