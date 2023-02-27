@@ -24,6 +24,7 @@ searchInputEl.addEventListener('blur', function(){
 
 /* 2. BADGE : 500 이상이면 투명하게 (숨기기) */
 const badgeEl = document.querySelector('header .badges'); /* document는 HTML 자체 */
+const toToEl = document.querySelector('#to-top');
 
 window.addEventListener('scroll', _.throttle(function (){   /* window -> 우리가 보고있는 화면 자체  */
   console.log(window.scrollY); 
@@ -33,6 +34,10 @@ window.addEventListener('scroll', _.throttle(function (){   /* window -> 우리�
       opacity:0 , 
       display:'none'
     });
+    //버튼 보기
+    gsap.to(toToEl , .2 ,{
+      x: 0
+    });
 
   }else{
     // 배지 보이기    
@@ -40,8 +45,20 @@ window.addEventListener('scroll', _.throttle(function (){   /* window -> 우리�
       opacity:1 ,
       display:'block'
     });
+    //버튼 숨기기
+    gsap.to(toToEl, .2 ,{
+      x: 100
+    });
   }
 },300));  /* 300 = 0.3초를 의미  - 밀리세컨트 ,  1000ms = 1초   */
+
+
+toToEl.addEventListener('click', function(){
+  gsap.to(window, .7 , {
+    scrollTo: 0
+  })
+})
+
 
 
 
@@ -159,3 +176,8 @@ spyEls.forEach(function(spyEl){
     .setClassToggle(spyEl, 'show')
     .addTo(new ScrollMagic.Controller());
 });
+
+
+// 9. 년도 계산 
+const thisYear = document.querySelector('.this-year')
+thisYear.textContent = new Date().getFullYear();

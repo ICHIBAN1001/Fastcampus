@@ -29,6 +29,7 @@
   <!-- Swiper 라이브러리 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
   <!-- ScrollMagic -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -389,9 +390,7 @@
     </div>
   </header>
 
-  
  <!-----------------------------     HEARDER END    ------------------------------------ -->
-
 
   <!--2. VISUAL-->
   <section class="visual">
@@ -421,8 +420,9 @@
   </section>
 
   
+
   <!--3. NOTICE-->
-    <section class="notice">
+  <section class="notice">
 
       <!--3.1. NOTICE LINE-->
       <div class="notice-line">
@@ -513,7 +513,8 @@
 
       </div>
 
-    </section>
+  </section>
+
 
 
   <!-- 4. REWARDS  -->
@@ -521,7 +522,7 @@
     <div class="bg-left"></div>
     <div class="bg-right"></div>
     <div class="inner">
-
+      <!-- 4.1 BTN-GROUP -->
       <div class="btn-group">
         <div class="btn btn--reverse sign-up">회원가입</div>
         <div class="btn sign-in">로그인</div>
@@ -532,29 +533,35 @@
   </section>
 
 
+
   <!-- 5. YOUTUBE -->
   <section class="youtube">
+    <!-- 5.1 YOUTUBE__AREA -->
     <div class="youtube__area">
       <div id="player"></div>
     </div>
+    <!-- 5.2 YOUTUBE__COVER -->
     <div class="youtube__cover"></div>
+    <!-- 5.3 INNER -->
     <div class="inner">
       <img src="./images/floating1.png" alt="Icon" class="floating floating1">
       <img src="./images/floating2.png" alt="Icon" class="floating floating2">
-      
     </div>
   </section>
 
+
+
   <!-- 6. SEASON PRODUCT -->
   <section class="season-product scroll-spy">
+    <!-- 6.1 INNER -->
     <div class="inner">
-
       <img src="./images/floating3.png" alt="Icon" class="floating floating3" />
       <img src="./images/season_product_image.png" alt="아이스 커피 블렌드" class="product back-to-position to-right delay-0" />
-
+      <!-- 6.1.1 TEXT-GROUP -->
       <div class="text-group">
         <img src="./images/season_product_text1.png" alt="상쾌하게 여름을 반겨줄 시즌 원두 아이스 커피 블렌드" class="title back-to-position to-left delay-1" />
         <img src="./images/season_product_text2.png" alt="아프리카와 라틴 아메리카 커피의 브렌드로 시트러스함과 은은한 캐러멜 향을 동시에 느낄 수 있으며, 차갑게 즐길 때 풍미가 더욱 깊어지는 원두입니다." class="description back-to-position to-left delay-2" />
+        <!-- 6.1.1.1 -->
         <div class="more back-to-position to-left delay-3">
           <a href="javascript:void(0)" class="btn">자세히 보기</a>
         </div>
@@ -564,11 +571,13 @@
   </section>
 
 
+
   <!-- 7. RESERVE COFEE -->
   <section class="reserve-coffee scroll-spy">
+    <!-- 7.1 INNER -->
     <div class="inner">
-
       <img src="./images/reserve_logo.png" alt="" class="reserve-logo back-to-position to-right delay-0" />
+      <!-- 7.1.1 TEXT-GROUP -->
       <div class="text-group">
         <img src="./images/reserve_text.png" alt="" class="description back-to-position to-right delay-1" />
         <div class="more back-to-position to-right delay-2">
@@ -581,13 +590,16 @@
   </section>
 
 
+
   <!-- 8. PICK YOUR FAVORITE -->
   <section class="pick-your-favorite scroll-spy">
+    <!-- 8.1 INNER -->
     <div class="inner">
-
+      <!-- 8.1.1 TEXT-GROUP -->
       <div class="text-group">
         <img src="./images/favorite_text1.png" alt="PICK YOUR FAVORITE" class="title back-to-position to-right delay-0" />
         <img src="./images/favorite_text2.png" alt="다양한 메뉴를 스타벅스에서 즐겨보세요." class="description back-to-position to-right delay-1" />
+        <!-- 8.1.1.1 -->
         <div class="more back-to-position to-right delay-2">
           <a href="javascript:void(0)" class="btn btn--white">자세히 보기</a>
         </div>
@@ -597,14 +609,18 @@
   </section>
 
 
+
   <!-- 9. RESERVE STORE -->
   <section class="reserve-store">
+    <!-- 9.1 INNER -->
     <div class="inner">
-
+      <!-- 9.1.1 MEDAL -->
       <div class="medal">
+        <!-- 9.1.1.1 FRONT -->
         <div class="front">
           <img src="./images/reserve_store_medal_front.png" alt="R">
         </div>
+        <!-- 9.1.1.2 BACK -->
         <div class="back">
           <img src="./images/reserve_store_medal_back.png" alt="스타벅스 리저브 매장">
           <a href="javascript:void(0)" class="btn">
@@ -617,14 +633,17 @@
   </section>
 
 
+
   <!-- 10. FIND THE STORE -->
   <section class="find-store scroll-spy">
+    <!-- 10.1 INNER -->
     <div class="inner">
-
       <img src="./images/find_store_texture1.png" alt="" class="texture1" />
       <img src="./images/find_store_texture2.png" alt="" class="texture2" />
       <img src="./images/find_store_picture1.jpg" alt="" class="picture picture1 back-to-position to-right delay-0" />
       <img src="./images/find_store_picture2.jpg" alt="" class="picture picture2 back-to-position to-right delay-1" />
+
+      <!-- 10.1.1 TEXT-GROUP -->
       <div class="text-group">
         <img src="./images/find_store_text1.png" alt="스타벅스를 가까이에서 경험해보세요." class="title back-to-position to-left delay-0" />
         <img src="./images/find_store_text2.png" alt="고객님과 가장 가까이 있는 매장을 찾아보세요!" class="description back-to-position to-left delay-1" />
@@ -636,11 +655,15 @@
     </div>
   </section>
 
-  <!-- 11. AWARDS-->
-   <section class="awards">
-    <div class="inner">
 
+
+  <!-- 11. AWARDS-->
+  <section class="awards">
+    <!-- 11.1 -->
+    <div class="inner">
+      <!-- 11.1.1  -->
       <div class="swiper-container">
+        <!-- 11.1.1.1  -->
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./images/awards_slide1.jpg" alt="대통령 표창" />
@@ -674,17 +697,67 @@
           </div>
         </div>
       </div>
-
+      <!-- 11.1.2  -->
       <div class="swiper-prev">
         <div class="material-icons">arrow_back</div>
       </div>
+      <!-- 11.1.3  -->
       <div class="swiper-next">
         <div class="material-icons">arrow_forward</div>
       </div>
 
-
     </div>
   </section>
+
+
+
+  <!-- 12. FOOTER  -->
+  <footer>
+    <!-- 12.1 -->
+    <div class="inner">
+
+      <!-- 12.1.1 -->
+      <ul class="menu">
+        <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
+        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
+        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+        <li><a href="javascript:void(0)">스타벅스 카드 이용약관</a></li>
+        <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+      </ul>
+      
+      <!-- 12.1.2 -->
+      <div class="btn-group">
+        <a href="javascript:void(0)" class="btn btn--white">찾아오시는 길</a>
+        <a href="javascript:void(0)" class="btn btn--white">신규입점제의</a>
+        <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
+      </div>
+
+      <!-- 12.1.3 -->
+      <div class="info">
+        <span>사업자등록번호 201-81-21515</span>
+        <span>(주)스타벅스 코리아 대표이사 이석구</span>
+        <span>TEL : 02) 3015-1100 / FAX : 02) 3015-1106</span>
+        <span>개인정보 책임자 : 강기원</span>
+      </div>
+
+      <!-- 12.1.4 -->
+      <p class="copyright">
+        &copy;<span class="this-year"></span> Starbucks Coffee Company. All Rights Reserved.
+      </p>
+      <img src="./images/starbucks_logo_only_text.png" alt="" class="logo">
+
+    </div>
+  </footer>
+
+
+
+  <!-- 13. to-top -->
+  <div id="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
+
+  
 
 </body>
 </html>
