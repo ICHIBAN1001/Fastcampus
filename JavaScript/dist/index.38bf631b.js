@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"9ZIyz":[function(require,module,exports) {
+})({"kATiU":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "26170a8763aff760";
+module.bundle.HMR_BUNDLE_ID = "cb96301138bf631b";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -556,15 +556,18 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"adjPd":[function(require,module,exports) {
-/* 둘 중에 선택해서 사용하면 된다  */ const string1 = "Hello" // 큰 따옴표
+},{}],"ka3iZ":[function(require,module,exports) {
+const number = -123.1234;
+const pi = .14 // 소수점 앞 정수가 0이면 생략 가능
 ;
-const string2 = "Hello" // 작은  따옴표
+console.log(typeof (number + undefined)) // NaN은 숫자가 아닌 숫자 
 ;
-/* 보간: 데이터를 문자 내부에 채워넣는 용도 */ /* 문자 데이터 내부에 $ 로 시작해서 { } 로 작성 , 중괄호 사이에 데이터 넣기  */ const string3 = `Hello ${string1} ?!` // `(백틱) 템플릿 리터럴 방식 
-;
-console.log(string3);
+console.log(typeof pi);
+// 부동 소수점 오류
+const valueA = 0.1;
+const valueB = 0.2;
+console.log(Number(valueA + valueB).toFixed(1));
 
-},{}]},["9ZIyz","adjPd"], "adjPd", "parcelRequirebaba")
+},{}]},["kATiU","ka3iZ"], "ka3iZ", "parcelRequirebaba")
 
-//# sourceMappingURL=index.63aff760.js.map
+//# sourceMappingURL=index.38bf631b.js.map

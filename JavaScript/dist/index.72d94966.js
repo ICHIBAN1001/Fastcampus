@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"9ZIyz":[function(require,module,exports) {
+})({"jpGuY":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "26170a8763aff760";
+module.bundle.HMR_BUNDLE_ID = "38ddae7a72d94966";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -556,7 +556,7 @@ function hmrAccept(bundle, id) {
     });
 }
 
-},{}],"adjPd":[function(require,module,exports) {
+},{}],"dYVQ7":[function(require,module,exports) {
 /* 둘 중에 선택해서 사용하면 된다  */ const string1 = "Hello" // 큰 따옴표
 ;
 const string2 = "Hello" // 작은  따옴표
@@ -565,6 +565,6 @@ const string2 = "Hello" // 작은  따옴표
 ;
 console.log(string3);
 
-},{}]},["9ZIyz","adjPd"], "adjPd", "parcelRequirebaba")
+},{}]},["jpGuY","dYVQ7"], "dYVQ7", "parcelRequirebaba")
 
-//# sourceMappingURL=index.63aff760.js.map
+//# sourceMappingURL=index.72d94966.js.map
