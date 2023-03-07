@@ -2,6 +2,7 @@ console.log(typeof 'Hetty'=== 'string');
 console.log(typeof 123 === 'number');
 console.log(typeof true === 'boolean');
 console.log(typeof undefined=== 'undefined');
+
 console.log(typeof null === 'object');  // typeof 로 구분이 안된다
 console.log(typeof [] === 'object');    // typeof 로 구분이 안된다
 console.log(typeof {} === 'object');    // typeof 로 구분이 안된다
@@ -25,3 +26,9 @@ console.log(checkType(null))
 console.log(checkType([]))
 console.log(checkType({}))
 console.log(checkType(function () {}))
+
+
+
+
+
+console.log(Object .prototype.toString.call(null).slice(8,-1));
