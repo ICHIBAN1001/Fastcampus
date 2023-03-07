@@ -17,7 +17,10 @@ const valueA = function () {
 }
 
 const valueB = function (argC) {
-  console.log('argC');
+  console.log(argC);
 }
 
-console.log(valueB(123)) 
+// console.log(valueB(123)) 
+valueB(123)
+
+valueB(valueA)
